@@ -20,6 +20,14 @@ function extractValues(data) {
 
 function arrayToLengthCounters(array) {
   // Tu código aquí
+  const contenedor = {};
+  
+  for (let i = 0; i < array.length; i++) {
+    const elemento = array[i];
+    contenedor[elemento] = elemento.length;
+  }
+  
+  return contenedor;
 }
 
 /*  
